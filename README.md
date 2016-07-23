@@ -1,11 +1,11 @@
-一个基于tornado的小程序
+锘夸竴涓熀浜巘ornado鐨勫皬绋嬪簭
 
-cd tornado
+cd    tornado
 
-virtualenv venv
+virtualenv    venv
 
 venv\scripts\activate
 
-pip install -r requirements.txt
+pip   install   -r   requirements.txt
 
-python poe.py or python poe.py --port=port
+python  poe.py  or  python  poe.py  --port=port
