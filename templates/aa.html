@@ -1,0 +1,69 @@
+﻿{% extends "base.html" %}
+
+{% block title %}Todolist{% end %}
+
+{% block navbar %}
+
+<div class="navbar navbar-inverse" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<p align="center">
+
+<form name="imput" method="post" action="/">
+<h1 align="center"><table align="center">ToDolist</br>
+<input type="text" name="todolist" value="">
+</table>
+</h1>
+</form>
+
+</p>
+</div>
+</div>
+</div>
+
+{% end %}
+
+<body>
+{% block content %}
+<div class="container">
+<div class="page-header">
+<h2 align="center">正在进行</h2>
+<p align="center">
+<ol align="center">
+{%for ldl in name%}
+
+
+
+
+<li>
+<form method="post" action="/">
+<p align="center">
+<input type="hidden" name="hidd" valud="2">
+<input type="text" name="text"  value="{{ldl}}">
+<input type="submit" name="submit" value="进行中">
+</p>
+</form>
+</li>
+</p>
+</form>
+
+
+
+{%end%}
+</ol>
+</p>
+<h2 align="center">已经完成</h2>
+<ol>
+{%for bd in bod%}
+<li >
+<p align="center">
+<input type="text" name="bod" value="{{bd}}"><input type="submit" value="已完成">
+<p>
+</li>
+{%end%}
+</ol>
+</body>
+</div>
+</div>
+
+{% end%}

@@ -1,0 +1,35 @@
+﻿{% block doc %}
+<!DOCTYPE html>
+<html{% block html_attribs %}{% end %}>
+{% block html %}
+  <head>
+    {% block head %}
+    <title>{% block title %}
+    {{title|default}}
+    <link href="{{static_url("favicon.ico")}}" rel="stylesheet">
+    {% end %}</title>
+
+    {% block metas %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% end %}
+    {% block styles %}
+    <!-- Bootstrap -->
+    <link href="{{static_url("bootrstap.css")}}" rel="stylesheet">
+    {% end%}
+
+    
+    {%end %}
+  </head>
+  <body{% block body_attribs %}{% end %}>
+    {% block body %}
+    {% block navbar %}
+    {% end %}
+    {% block content%}
+    {% end %}
+
+    
+    {% end %}
+  </body>
+{% end %}
+</html>
+{% end %}
